@@ -9,3 +9,11 @@ def show_tasks():
         print(i, t)
 
 print("To-Do Application")
+def delete_task(task_number):
+    if 1 <= task_number <= len(tasks):
+        removed = tasks.pop(task_number - 1)
+        print("Deleted task:", removed)
+    else:
+        print("Invalid task number")
+
+print("To-Do Application")
