@@ -10,9 +10,10 @@ def show_tasks():
 def clear_tasks():
     tasks.clear()
     print("All tasks cleared")
-
-print("To-Do Application")
-
+def search_task(word):
+    for t in tasks:
+        if word in t:
+            print("Found:", t)
 def delete_task(task_number):
     if 1 <= task_number <= len(tasks):
         removed = tasks.pop(task_number - 1)
