@@ -22,3 +22,7 @@ def delete_task(task_number):
         print("Invalid task number")
 
 print("To-Do Application")
+def count_tasks():
+    print("Total tasks:", len(tasks))
+
+print("To-Do Application")
